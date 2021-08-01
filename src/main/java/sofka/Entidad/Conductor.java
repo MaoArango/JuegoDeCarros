@@ -11,4 +11,12 @@ public class Conductor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
+
+    public Conductor() {
+    }
+
+    public Conductor(int id, String nombre) {
+        this.id = id;
+        this.nombre = nombre;
+    }
 }

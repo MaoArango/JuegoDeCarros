@@ -1,8 +1,8 @@
 package sofka;
 
-import sofka.Entidad.Carro;
-import sofka.Entidad.Conductor;
-import sofka.Entidad.Jugador;
+import sofka.Entidad.*;
+import sofka.Servicio.ServicioGuardarEleccion;
+import sofka.Servicio.ServicioGuardarJugador;
 import sofka.Servicio.ServicioSeleccionarCarro;
 import sofka.Servicio.ServicioSeleccionarConductor;
 
@@ -19,10 +19,21 @@ public class Aplicacion {
         Carro carro = new Carro();
         carro.setNombre("Mercedes");
 
+        Elecccion elecccion = new Elecccion();
+        elecccion.setJugador(jugador);
+        elecccion.setConductor(conductor);
+        elecccion.setCarro(carro);
 
-     /*   ServicioGuardarJugador servicioGuardarJugador = new ServicioGuardarJugador();
-        servicioGuardarJugador.guardar(jugador);
-*/
+       //ServicioGuardarEleccion servicioGuardarEleccion = new ServicioGuardarEleccion();
+        //servicioGuardarEleccion.guardar(elecccion);
+
+
+
+
+
+       ServicioGuardarJugador servicioGuardarJugador = new ServicioGuardarJugador();
+       servicioGuardarJugador.guardar(jugador);
+
         ServicioSeleccionarCarro servicioSeleccionarCarro = new ServicioSeleccionarCarro();
         servicioSeleccionarCarro.buscar(1);
 

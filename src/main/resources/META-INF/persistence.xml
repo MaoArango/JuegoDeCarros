@@ -7,11 +7,17 @@
     <persistence-unit name="default">
 
         <class>sofka.Entidad.Jugador</class>
+        <class>sofka.Entidad.EleccionCarril</class>
+        <class>sofka.Entidad.Elecccion</class>
+        <class>sofka.Entidad.Pista</class>
+        <class>sofka.Entidad.Carro</class>
+        <class>sofka.Entidad.Carril</class>
+        <class>sofka.Entidad.Conductor</class>
 
         <properties>
             <!-- JPA properties -->
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/juego_de_carros"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/test_carro"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value="admin"/>
 
@@ -20,6 +26,7 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="false"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
+
         </properties>
 
     </persistence-unit>
